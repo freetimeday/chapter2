@@ -1,0 +1,12 @@
+create table 'customer' (
+    `id` bigint(20) not null auto_increment,
+    `name` varchar(255) default null,
+    `contact` varchar(255) default null,
+    `telephone` varchar(255) default null,
+    `email` varchar(255) default null,
+    `remark` text,
+    primary key (`id`)
+) engine=innodb default charest=utf8;
+
+insert info `customer` values('1','customer1','jack','13123456789','jack@qq.com',null);
+insert info `customer` values('2','customer2','rose','13123456781','rose@qq.com',null);
