@@ -2,7 +2,7 @@ package org.smart4j.chapter2.util;
 
 
 
-import javax.persistence.criteria.CriteriaBuilder;
+
 
 public final class CastUtil {
 

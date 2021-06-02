@@ -17,13 +17,14 @@ public class CustomerService {
 
 
 
-    public List<Customer> getCustomerList(String keyword){
+    public List<Customer> getCustomerList(){
             String sql="SELECT * FROM CUSTOMER";
             return DatabaseHelper.queryEntityList(Customer.class,sql);
     }
 
     public Customer getCustomer(long id){
-        return null;
+        String sql="SELECT * FROM CUSTOMER where id="+id;
+        return DatabaseHelper.queryEntity(Customer.class,sql);
     }
 
     public boolean createCustomer(Map<String,Object> fieldMap){
